@@ -19,7 +19,7 @@ const TabPanel = () => {
         <button className={activeTab === 5 ? 'active' : ''} onClick={() => handleTabChange(5)}>Invoice</button>
       </div>
 
-      <div /* className="tab-content" */>
+      <div>
         {activeTab === 1 && <SalesOrder/>}
         {activeTab === 2 && <div>Content for Tab 2</div>}
         {activeTab === 3 && <div>Content for Tab 3</div>}
