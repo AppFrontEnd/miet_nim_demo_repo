@@ -43,14 +43,6 @@ const FourColCompo = (props) => {
                     props.compoFive == "input" ? (<LabelInputCompo  title={props.compoLabFive}/>):(<DropDownLabel compoLabOne={props.compoLabFive}/>)
                 }
             </>
-            {/* <label className="label">{props.compoLabOne}</label>
-            <input className="input" type="text" value="1" />
-            <label className="label">{props.compoLabThree}</label>
-            <input className="input" type="text" value="3" />
-            <label className="label">{props.compoLabFour}</label>
-            <input className="input" type="text" value="4" />
-            <label className="label">{props.compoLabFive}</label>
-            <input className="input" type="text" value="5" /> */}
         </div>
     );
 }

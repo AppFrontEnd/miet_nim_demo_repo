@@ -23,15 +23,15 @@ const OrderDetailsFiveCompo = (props) => {
                     <>
                         <label style={{ width: "42%", marginTop: "10px" }}>{props.compOne}</label>
                         {props.compOneType=="select"?(<DropDownField/>):(<input style={{ width: "30%", marginTop: "10px" }} type={props.compOneType} />)}
-                       {/*  <input style={{ width: "30%", marginTop: "10px" }} type={props.compOneType} /> */}
+                       
 
                         <label style={{ width: "32%", marginTop: "10px", marginLeft: "5rem" }}>{props.compTwo}</label>
                         {props.compTwoType=="select"?(<DropDownField/>):(<input style={{ width: "15%", marginTop: "10px" }} type={props.compTwoType} />)}
-                       {/*  <input style={{ width: "15%", marginTop: "10px" }} type={props.compTwoType} /> */}
+                       
 
                         <label style={{ width: "60%", marginTop: "10px", marginLeft: "5rem" }}>{props.compThree}</label>
                         {props.compThreeType=="select"?(<DropDownField/>):(<input style={{ width: "40%" }} type={props.compThreeType} />)}
-                        {/* <input style={{ width: "40%" }} type={props.compThreeType} /> */}
+                       
                         <button className="order-salesOrderBtn" type="button" >{props.btnText}</button>
                     </>}
             </div>
@@ -41,15 +41,15 @@ const OrderDetailsFiveCompo = (props) => {
                     <>
                         <label style={{ width: "42%", marginTop: "10px" }}>{props.compOne}</label>
                         {props.compOneType=="select"?(<DropDownField/>):(<input style={{ width: "30%", marginTop: "10px" }} type={props.compOneType} />)}
-                       {/*  <input style={{ width: "30%", marginTop: "10px" }} type={props.compOneType} /> */}
+                       
 
                         <label style={{ width: "32%", marginTop: "10px", marginLeft: "5rem" }}>{props.compTwo}</label>
                         {props.compTwoType=="select"?(<DropDownField/>):(<input style={{ width: "15%", marginTop: "10px" }} type={props.compTwoType} />)}
-                        {/* <input style={{ width: "15%", marginTop: "10px" }} type={props.compTwoType} /> */}
+                       
 
                         <label style={{ width: "60%", marginTop: "10px", marginLeft: "5rem", fontSize: props.compThree == "Total Amount" ? "22px" : "14px" }}>{props.compThree}</label>
                         {props.compThreeType=="select"?(<DropDownField/>):(<input style={{ width: "40%" }} type={props.compThreeType} />)}
-                        {/* <input style={{ width: "40%" }} type={props.compThreeType} /> */}
+                       
                         <label style={{ width: "43%" }}></label>
                     </>}
             </div>
@@ -59,11 +59,11 @@ const OrderDetailsFiveCompo = (props) => {
                     <>
                         <label style={{ width: "40%", marginTop: "10px" }}>{props.compOne}</label>
                         {props.compOneType=="select"?(<DropDownField/>):(<input style={{ width: "30%", marginTop: "10px" }} type={props.compOneType} />)}
-                        {/* <input style={{ width: "30%", marginTop: "10px" }} type={props.compOneType} /> */}
+                       
 
                         <label style={{ width: "32%", marginTop: "10px", marginLeft: "5rem" }}>{props.compTwo}</label>
                         {props.compTwoType=="select"?(<DropDownField/>):(<input style={{ width: "15%", marginTop: "10px" }} type={props.compTwoType} />)}
-                        {/* <input style={{ width: "15%", marginTop: "10px" }} type={props.compTwoType} /> */}
+                       
 
                         <label style={{ width: "60%", marginTop: "10px", marginLeft: "5rem" }}></label>
                         <label style={{ width: "40%" }} type={props.compThreeType} />
@@ -77,4 +77,3 @@ const OrderDetailsFiveCompo = (props) => {
 }
 
 export default OrderDetailsFiveCompo;
-

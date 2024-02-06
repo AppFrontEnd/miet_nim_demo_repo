@@ -17,7 +17,6 @@ const OrderDetails = () => {
                     <label style={{ width: "42%", marginTop: "10px" }}>Customer</label>
                     <input style={{ width: "6%", marginTop: "10px" }} type="text" />
                     <DropDownField style={{ width: "90%", marginTop: "10px",padding:"6px",border:'1px solid #ccc' }}/>
-                    {/* <input style={{ width: "90%", marginTop: "10px" }} type="text" /> */}
                     <label style={{ width: "60%", marginLeft: "5rem" }}>Panel Number</label>
                     <input style={{ width: "40%", marginTop: "10px" }} type="text" />
                     <div style={{ backgroundColor: "white" }} className="order-salesOrderBtn"></div>
