@@ -7,16 +7,21 @@ import DropDownField from './DropDownField';
 const OrderDetails = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
-        toast.success('Order Created Successful!', {position: "bottom-right"});
+        toast.success('Order Created Successful!', { position: "bottom-right" });
     };
+
+    const onReset = () => {
+        document.getElementById("order-details").reset();
+        document.getElementById("techical-details").reset();
+    }
     return (
-        <form onSubmit={handleSubmit}>
+        <form id="order-details" onSubmit={handleSubmit}>
             <fieldset>
                 <legend>Order Details</legend>
                 <div className="order-container">
                     <label style={{ width: "42%", marginTop: "10px" }}>Customer</label>
                     <input style={{ width: "6%", marginTop: "10px" }} type="text" />
-                    <DropDownField style={{ width: "90%", marginTop: "10px",padding:"6px",border:'1px solid #ccc' }}/>
+                    <DropDownField style={{ width: "90%", marginTop: "10px", padding: "6px", border: '1px solid #ccc' }} />
                     <label style={{ width: "60%", marginLeft: "5rem" }}>Panel Number</label>
                     <input style={{ width: "40%", marginTop: "10px" }} type="text" />
                     <div style={{ backgroundColor: "white" }} className="order-salesOrderBtn"></div>
@@ -56,21 +61,21 @@ const OrderDetails = () => {
                     btnText={"Change Date"} />
                 <OrderDetailsFiveCompo
                     compOneType={"textfield"} compOne={"Delivery DATE"}
-                    compTwoType={"number"}  compTwo={"Cost PER PCB"}
+                    compTwoType={"number"} compTwo={"Cost PER PCB"}
                     compThreeType={"number"} compThree={"Sub Total Amout"}
                     btnText={"Perf Invoice"} />
                 <OrderDetailsFiveCompo
                     compOneType={"number"} compOne={"Order Number"}
-                    compTwoType={"number"}  compTwo={"Order Size (Sq. Mtr.)"}
+                    compTwoType={"number"} compTwo={"Order Size (Sq. Mtr.)"}
                     compThreeType={"number"} compThree={"Tax (Gst 18% )"}
-                    btnText={"Reset"} />
+                    btnText={"Reset"} btnAction={onReset} />
                 <OrderDetailsFiveCompo
                     compOneType={"number"} compOne={"Order Status"}
-                    compTwoType={"number"}  compTwo={"Old Panel Number"}
+                    compTwoType={"number"} compTwo={"Old Panel Number"}
                     compThreeType={"number"} compThree={"Total Amount"} />
                 <OrderDetailsFiveCompo
                     compOneType={"number"} compOne={"Invoice"}
-                    compTwoType={"number"}  compTwo={"Perform Invoice #"} />
+                    compTwoType={"number"} compTwo={"Perform Invoice #"} />
 
             </fieldset>
         </form>

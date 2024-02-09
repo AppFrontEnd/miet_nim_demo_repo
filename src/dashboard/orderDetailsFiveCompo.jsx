@@ -7,6 +7,7 @@ const OrderDetailsFiveCompo = (props) => {
         const handleChange = (event) => {
             setSelectedOption(event.target.value);
         };
+
         return (
             <select style={{padding:"5px",width:"32%"}} value={selectedOption} onChange={handleChange}>
                 <option value="option1">Option 1</option>
@@ -14,6 +15,10 @@ const OrderDetailsFiveCompo = (props) => {
                 <option value="option3">Option 3</option>
             </select>
         )
+    }
+
+    const onDefBtnAction = () =>{
+
     }
 
     return (
@@ -32,7 +37,7 @@ const OrderDetailsFiveCompo = (props) => {
                         <label style={{ width: "60%", marginTop: "10px", marginLeft: "5rem" }}>{props.compThree}</label>
                         {props.compThreeType=="select"?(<DropDownField/>):(<input style={{ width: "40%" }} type={props.compThreeType} />)}
                        
-                        <button className="order-salesOrderBtn" type="button" >{props.btnText}</button>
+                        <button className="order-salesOrderBtn" type="button" onClick={props.btnAction?props.btnAction:onDefBtnAction()}>{props.btnText}</button>
                     </>}
             </div>
 

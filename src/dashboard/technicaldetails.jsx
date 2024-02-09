@@ -4,7 +4,7 @@ import FourColCompo from "./fourColCompo";
 
 const TechnicalDetails = () => {
     return (
-        <form>
+        <form id="techical-details">
             <fieldset>
                 <legend>Technical Details</legend>
                 <FourColCompo
